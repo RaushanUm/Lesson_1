@@ -64,5 +64,44 @@ class Lesson_1 {
         }
     }
 }
+class Lesson_2 {
+    public static void main(String[] args) {
+        Task5();
+        Task6();
+        Task7();
+    }
 
+    public static void Task5() {
+        System.out.println("Задание 5");
+        boolean sumInRange = isSumInRange(3, 9);
+        System.out.println("Сумма в диапазоне: " + sumInRange);
+    }
 
+    public static boolean isSumInRange(int a, int b) {
+        int sum = a + b;
+        int s = a + b;
+        return (10 <= s) && (s <= 20);
+    }
+
+    public static void Task6() {
+        System.out.println("Задание 6");
+        printSign(-8);
+    }
+
+    public static void printSign(int number) {
+        if (number >= 0) {
+            System.out.println("Число положительное");
+        } else {
+            System.out.println("Число отрицательное");
+        }
+    }
+
+    public static void Task7() {
+        System.out.println("Задание 7");
+        boolean isNegativeNumber = isNegative(-10);
+        System.out.println ("Число отрицательное:"  + isNegativeNumber);
+    }
+    public static boolean isNegative (int number) {
+        return number < 0;
+    }
+}
